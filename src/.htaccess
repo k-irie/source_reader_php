@@ -1,0 +1,9 @@
+<Files ~ "\.json$">
+    deny from all
+</Files>
+
+RewriteEngine On
+
+#RewriteRule ^$ ./browser.php?path=root [L]
+#RewriteRule ^([^/]*)/$ ./browser.php?mode=$1 [L]
+##RewriteRule ^([^/]*)/([^/]*)$ ./browser.php?mode=$1_$2 [L]

@@ -1,0 +1,93 @@
+{
+	"ignore": [
+		".vscode",
+		".git"
+	],
+	"path": "./sample/",
+	"selectable": "text",
+	"node-list": {
+		"root": {},
+		"roster": {
+			"path": "C:/Users/kenji/Documents/agile/roster/src/main",
+			"selectable": "none"
+		},
+		"iot": {
+			"path_": "C:/Users/kenji/Documents/arduino/ack2025",
+			"path": "C:/Users/kenji/Documents/Arduino",
+			"selectable": "none"
+		},
+		"i": {
+			"path": "C:/Users/kenji/Documents/arduino/acf2",
+			"path_": "C:/Users/kenji/Documents/Arduino/",
+			"selectable": "none"
+		},
+		"server": {
+			"path": "C:/Users/kenji/OneDrive/ドキュメント/2025/福山/前期/server",
+			"selectable": "text"
+		},
+		"w": {
+			"path": "C:/Users/kenji/Documents/fukuyama/webapp/lemp/html/object",
+			"selectable": "none"
+		},
+		"htdocs": {
+			"ignore": [],
+			"path": "c:/xampp/htdocs",
+			"selectable": "none"
+		},
+		"wa": {
+			"ignore": [],
+			"path": "c:/xampp/htdocs/webapp",
+			"selectable": "none"
+		},
+		"rpa": {
+			"ignore": [
+				"vrpa",
+				"rpa",
+				".ipynb_checkpoints",
+				"__pycache__"
+			],
+			"path": "D:/RPA",
+			"path_": "C:/Users/kenji/Documents/rpa",
+			"path__": "c:/xampp/phpMyAdmin/",
+			"selectable_": "none",
+			"selectable": "text"
+		}
+	},
+	"file-type": {
+		"log": "accesslog",
+		"ino": "arduino",
+		"c": "c",
+		"h": "h",
+		"cpp": "cpp",
+		"conf": "apache",
+		"htaccess": "apache",
+		"css": "css",
+		"http": "http",
+		"html": "html",
+		"java": "java",
+		"jsp": "html",
+		"js": "javascript",
+		"json": "json",
+		"ipynb": "python",
+		"kt": "kotlin",
+		"md": "markdown",
+		"text": "plaintext",
+		"php": "php",
+		"py": "python",
+		"sql": "sql",
+		"ts": "typescript",
+		"xml": "xml",
+		"yaml": "yaml",
+
+		"svg": "Scalable Vector Graphics (SVG)",
+		"tif": "Tagged Image File Format (TIFF)",
+		"tiff": "Tagged Image File Format (TIFF)",
+		"webp": "WEBP Image File Format",
+		"jpg": "JPEG Image File Format",
+		"jpeg": "JPEG Image File Format",
+		"png": "PING Image File Format",
+		"gif": "GIF Image File Format",
+
+		"xlsx": "Microsoft Excel"
+	}
+}

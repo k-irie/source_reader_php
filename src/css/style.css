@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Kosugi Maru";
+    src: url("../fonts/KosugiMaru-Regular.ttf");
+}
+
+@font-face {
+    font-family: "M";
+    src:
+        local("M"),
+        url("../fonts/MPLUS1Code-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Zen Maru Gothic";
+    src:
+        local("Zen Maru Gothic"),
+        url("../fonts/ZenMaruGothic-Regular.ttf");
+}
+
+@font-face {
+    font-family: "UDEV Gothic";
+    src:
+        local("UDEV Gothic"),
+        url("../fonts/UDEVGothicLG-Regular.ttf");
+}
+
+html {
+    font-family: "UDEV Gothic", serif;
+    /* font-family: "Zen Maru Gothic", serif; */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16pt;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1em;
+    margin: 0;
+}
+
+input,
+select,
+option,
+textarea {
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    user-select: none;
+}
+
+select,
+option {
+    height: 1.6em;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    background-color: navy;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+
+.hidden {
+    display: none;
+}
+
+.loading span {
+    display: block;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+#page {
+    width: calc(100% - 0.6em);
+    height: calc(100% - 0.6em);
+    margin: 0.3em auto;
+    border-radius: 3pt;
+    box-shadow: 2pt 2pt 2pt 2pt lightskyblue;
+    overflow: hidden;
+}
+
+.source_reader {
+    width: 100%;
+    height: 100%;
+}
+
+.source_reader>nav {
+    width: 100%;
+}
+
+.source_reader main nav:first-child {
+    margin-left: 0.8em;
+}
+
+.source_reader .body {
+    /* display: flex;
+    outline: auto;
+    min-height: 100%; */
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.source_reader p {
+    margin: 0;
+}
+
+.source_reader .tree {
+    width: max-content;
+    display: flex;
+    flex-flow: column;
+}
+
+.source_reader .reload {
+    cursor: pointer;
+}
+
+.source_reader .tree article {
+    font-size: 0.8em;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+.source_reader .tree article span.name {
+    display: inline-block;
+    height: inherit;
+    width: max-content;
+    margin: auto 0;
+    padding: 0.4em 0.4em 0.2em 0;
+}
+
+.source_reader .tree .file .name:hover {
+    background-color: antiquewhite;
+}
+
+.source_reader .tree ul {
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline: 1em 0;
+
+    width: max-content;
+    height: max-content;
+}
+
+.source_reader li.file,
+.source_reader li.folder {
+    cursor: pointer;
+}
+
+.source_reader .tree ::before {
+    font-size: 1.6em;
+}
+
+.source_reader .tree li.file::before {
+    content: "📄";
+}
+
+.source_reader .tree li.folder::before {
+    content: "📂";
+}
+
+.source_reader .tree li.folder.close::before {
+    content: "📁";
+}
+
+.source_reader .tree li.folder.close ul {
+    display: none;
+}
+
+.source_reader .split_line {
+    box-sizing: border-box;
+    border: 2px solid darkslateblue;
+    background-color: slategray;
+    width: 4px;
+    cursor: col-resize;
+}
+
+.source_reader .body main {
+    flex-grow: 1;
+    min-width: 40em;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+.source_reader .body main [name="font-size"] {
+    width: 2.4em;
+}
+
+.source_reader .body main nav {
+    overflow: hidden;
+    width: max-content;
+    height: max-content;
+    min-height: max-content;
+}
+
+.source_reader .body main nav .preview {
+    vertical-align: middle;
+}
+
+.source_reader .body main [name="preview"] {}
+
+.source_reader .body main [name="preview"]+label {}
+
+.source_reader .body main [name="preview"]:disabled+label {
+    color: gainsboro;
+    width: 2.4em;
+}
+
+.source_reader .body main [name="preview"]+span {
+    font-size: 0.6em;
+}
+
+.source_reader .body main .scroll {
+    /* width: calc(100vw - 482px);
+    height: calc(100vh - 43px); */
+    flex-grow: 1;
+    width: 100%;
+    overflow: auto;
+    border-radius: 0 4px 4px 0;
+}
+
+.source_reader .body main code {
+    box-sizing: border-box;
+    padding: 0 0.2em;
+    width: max-content;
+    height: max-content;
+}
+
+.source_reader .body main code h1,
+.source_reader .body main code h2,
+.source_reader .body main code h3,
+.source_reader .body main code h4,
+.source_reader .body main code h5,
+.source_reader .body main code h6 {
+    font-size: revert;
+    margin: revert;
+}
+
+.source_reader pre {
+    margin: 0.1rem;
+    width: max-content;
+    height: max-content;
+}
+
+.selectable {
+    user-select: text;
+}

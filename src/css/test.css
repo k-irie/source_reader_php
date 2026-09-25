@@ -1,0 +1,62 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+}
+
+.source_reader {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    outline: auto;
+    min-height: 100%;
+}
+
+.main .tree {
+    border: 1px solid black;
+    width: max-content;
+    min-height: 100%;
+}
+
+.main .tree article {
+    box-sizing: border-box;
+    width: 18rem;
+    height: calc(96vh - 1rem);
+    overflow: auto;
+}
+
+.main .border_line {
+    display: none;
+    border: 1px solid black;
+    width: 2rem;
+    min-height: 100%;
+    text-align: center;
+}
+
+.main main {
+    border: 1px solid blue;
+    width: 100%;
+    min-height: 100%;
+}
+
+.main main .scroll {
+    box-sizing: border-box;
+    padding: 0 0.2em;
+    width: calc(100vw - 20rem);
+    height: calc(96vh - 1rem);
+    overflow: auto;
+}

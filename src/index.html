@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <link rel="shortcut icon" href="browser.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブラウザ</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="highlight/styles/vs.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="loading hidden">
+        <span class="fa fa-refresh fa-spin fa-5x fa-fw"></span>
+    </div>
+    <div id="page">
+        <header>
+
+        </header>
+        <div class="source_reader">
+            <nav class="header">
+                <span class="name"></span>
+            </nav>
+            <div class="body">
+                <div class="tree">
+                    <nav>
+                        <span class="reload" data-target="folder-tree">🔃</span>
+                        <span class="name"></span>
+                    </nav>
+                    <article>
+                        <ul id="root" class="folder"></ul>
+                    </article>
+                </div>
+                <div class="split_line"></div>
+                <main>
+                    <nav>
+                        <select name="cssfile"></select>
+                        <select name="font-family">
+                            <option value="Zen Maru Gothic">Zen Maru Gothic</option>
+                            <option value="UDEV Gothic" selected>UDEV Gothic</option>
+                            <option value="M">M PLUS 1 Code</option>
+                            <option value="Kosugi Maru">Kosugi Maru</option>
+                        </select>
+                        <span class="font-size"><input type="number" min="4" max="144" value="16" name="font-size" class="text_right"></span>
+                        <span class="preview"><input type="checkbox" name="preview" id="preview" disabled value="preview"><label for="preview">preview</label></span>
+                        <span class="reload" data-target="file-contents">🔃</span>
+                        <span class="name"></span>：[<span class="filetype"></span>]
+                    </nav>
+                    <div class="scroll hljs">
+                        <pre><code class="hljs"></code></pre>
+                    </div>
+                </main>
+            </div>
+
+
+            <footer>
+            </footer>
+        </div>
+    </div>
+
+    <script type="module" src="js/marked/marked.min.js"></script>
+    <script src="highlight/highlight.min.js"></script>
+    <script src="js/nb.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <script src="js/Scheduler.js"></script>
+    <script src="js/draganddrop.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/get_contents.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
